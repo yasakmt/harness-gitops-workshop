@@ -6,13 +6,13 @@ connector:
   projectIdentifier: default_project
   type: Github
   spec:
-    url: https://github.com/GITHUB_USERNAME/harness-gitops-workshop
+    url: https://github.com/yasakmt/harness-gitops-workshop
     authentication:
       type: Http
       spec:
         type: UsernameToken
         spec:
-          username: GITHUB_USERNAME
+          username: yasakmt
           tokenRef: github_pat
     apiAccess:
       type: Token

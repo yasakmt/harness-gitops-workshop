@@ -3,7 +3,7 @@ rm -rf harness-gitops-workshop
 git config --global user.email ci-bot@argocd.com && git config --global user.name ci-bot
 echo "cloning repo..."
 GITHUBPAT=<+secrets.getValue("github_pat")>
-git clone https://oauth2:$GITHUBPAT@github.com/GITHUB_USERNAME/harness-gitops-workshop.git
+git clone https://oauth2:$GITHUBPAT@github.com/yasakmt/harness-gitops-workshop.git
 cd harness-gitops-workshop
 ls
 FILE_PATH="configs/git-generator-files-discovery/apps/podinfo/deployment.yaml"
