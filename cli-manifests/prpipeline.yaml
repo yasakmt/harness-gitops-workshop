@@ -7,7 +7,7 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: githubconnector
+        connectorRef: github_connector
         build: <+input>
   stages:
     - stage:

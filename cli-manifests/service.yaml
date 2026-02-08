@@ -13,7 +13,7 @@ service:
               store:
                 type: Github
                 spec:
-                  connectorRef: githubconnector
+                  connectorRef: github_connector
                   gitFetchType: Branch
                   paths:
                     - configs/git-generator-files-discovery/cluster-config/engineering/<+env.name>/config.json
@@ -25,7 +25,7 @@ service:
               store:
                 type: Github
                 spec:
-                  connectorRef: githubconnector
+                  connectorRef: github_connector
                   gitFetchType: Branch
                   paths:
                     - configs/git-generator-files-discovery/git-generator-files.yaml
